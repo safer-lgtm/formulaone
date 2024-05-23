@@ -13,7 +13,7 @@ with open('LICENSE') as f:
 
 setup(
     name='formulaone',
-    version='0.1.0',
+    version='0.1.1', # increase version by 0.0.1
     description='Downloads and prepares formula one data',
     long_description=readme,
     author='Timo Schuerg',

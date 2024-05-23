@@ -101,3 +101,5 @@ ENV/
 # pytest
 .pytest_cache
 
+# Ignore config file with sensitive information
+config.ini
