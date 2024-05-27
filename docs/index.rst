@@ -9,6 +9,6 @@ Welcome to sample's documentation!
 Contents:
 
 .. toctree::
-   
+   modules
    usage
    API
