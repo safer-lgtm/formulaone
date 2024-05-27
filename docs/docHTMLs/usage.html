@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Usage &#8212; sample v0.0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css?v=def86cc0" />
+    
+    <script src="_static/documentation_options.js?v=2fea6348"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API" href="API.html" />
+    <link rel="prev" title="dynamodb package" href="dynamodb.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="API.html" title="API"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dynamodb.html" title="dynamodb package"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">sample v0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Usage</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="usage">
+<h1>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
+<section id="helpers">
+<h2>Helpers<a class="headerlink" href="#helpers" title="Link to this heading">¶</a></h2>
+<p>You can use the <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.get_path_to_data()</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.get_path_to_data">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">get_path_to_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.get_path_to_data" title="Link to this definition">¶</a></dt>
+<dd><p>Return path to data.</p>
+</dd></dl>
+
+<p>Raw data folder is returned by <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.get_raw_data_path()</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.get_raw_data_path">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">get_raw_data_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.get_raw_data_path" title="Link to this definition">¶</a></dt>
+<dd><p>Return path to raw data.</p>
+</dd></dl>
+
+<p>You can also use the <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.get_tidy_data_path()</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.get_tidy_data_path">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">get_tidy_data_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.get_tidy_data_path" title="Link to this definition">¶</a></dt>
+<dd><p>Return path to tidy data.</p>
+</dd></dl>
+
+</section>
+<section id="dynamodb">
+<h2>DynamoDB<a class="headerlink" href="#dynamodb" title="Link to this heading">¶</a></h2>
+<p>To create a DynamoDB resource, use the <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.get_dynamodb_resource</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.get_dynamodb_resource">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">get_dynamodb_resource</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.get_dynamodb_resource" title="Link to this definition">¶</a></dt>
+<dd><p>Creates a DynamoDB resource using the AWS session.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><p>dynamo_resource: The DynamoDB resource.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>To list all DynamoDB tables, use the <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.list_dynamodb_tables</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.list_dynamodb_tables">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">list_dynamodb_tables</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dynamo_resource</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.list_dynamodb_tables" title="Link to this definition">¶</a></dt>
+<dd><p>Lists all tables in the DynamoDB resource.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dynamo_resource: The DynamoDB resource.</p>
+</dd>
+<dt>Returns:</dt><dd><p>list: List of table names.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>To get the movies table from DynamoDB, use the <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.get_movies_table</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.get_movies_table">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">get_movies_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dynamo_resource</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.get_movies_table" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the movies table from DynamoDB.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dynamo_resource: The DynamoDB resource.</p>
+</dd>
+<dt>Returns:</dt><dd><p>table: The DynamoDB table resource for movies.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>To get a specific movie item, use the <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.get_movie_item</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.get_movie_item">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">get_movie_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">year</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.get_movie_item" title="Link to this definition">¶</a></dt>
+<dd><p>Gets a movie item from the DynamoDB table.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>table: The DynamoDB table resource.
+year: The year of the movie.
+title: The title of the movie.</p>
+</dd>
+<dt>Returns:</dt><dd><p>dict: The movie item.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>To query movies by year, use the <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.query_movies_by_year</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.query_movies_by_year">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">query_movies_by_year</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">year</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.query_movies_by_year" title="Link to this definition">¶</a></dt>
+<dd><p>Queries movies by year from the DynamoDB table.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>table: The DynamoDB table resource.
+year: The year to query.</p>
+</dd>
+<dt>Returns:</dt><dd><p>list: List of movies for the given year.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="data-transformation">
+<h2>Data Transformation<a class="headerlink" href="#data-transformation" title="Link to this heading">¶</a></h2>
+<p>To transform raw movie data into a tidy DataFrame, use the <code class="docutils literal notranslate"><span class="pre">dynamodb.dynamodb_helpers.tidy_movie_data</span></code> function:</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="dynamodb.dynamodb_helpers.tidy_movie_data">
+<span class="sig-prename descclassname"><span class="pre">dynamodb.dynamodb_helpers.</span></span><span class="sig-name descname"><span class="pre">tidy_movie_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">movies</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dynamodb.dynamodb_helpers.tidy_movie_data" title="Link to this definition">¶</a></dt>
+<dd><p>Transforms the raw movie data into a tidy DataFrame.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>movies (list): List of raw movie data.</p>
+</dd>
+<dt>Returns:</dt><dd><p>DataFrame: Tidy DataFrame containing movie data.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Usage</a><ul>
+<li><a class="reference internal" href="#helpers">Helpers</a><ul>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.get_path_to_data"><code class="docutils literal notranslate"><span class="pre">get_path_to_data()</span></code></a></li>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.get_raw_data_path"><code class="docutils literal notranslate"><span class="pre">get_raw_data_path()</span></code></a></li>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.get_tidy_data_path"><code class="docutils literal notranslate"><span class="pre">get_tidy_data_path()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dynamodb">DynamoDB</a><ul>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.get_dynamodb_resource"><code class="docutils literal notranslate"><span class="pre">get_dynamodb_resource()</span></code></a></li>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.list_dynamodb_tables"><code class="docutils literal notranslate"><span class="pre">list_dynamodb_tables()</span></code></a></li>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.get_movies_table"><code class="docutils literal notranslate"><span class="pre">get_movies_table()</span></code></a></li>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.get_movie_item"><code class="docutils literal notranslate"><span class="pre">get_movie_item()</span></code></a></li>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.query_movies_by_year"><code class="docutils literal notranslate"><span class="pre">query_movies_by_year()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#data-transformation">Data Transformation</a><ul>
+<li><a class="reference internal" href="#dynamodb.dynamodb_helpers.tidy_movie_data"><code class="docutils literal notranslate"><span class="pre">tidy_movie_data()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="dynamodb.html"
+                          title="previous chapter">dynamodb package</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="API.html"
+                          title="next chapter">API</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/usage.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="API.html" title="API"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dynamodb.html" title="dynamodb package"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">sample v0.0.1 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Usage</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2012, Kenneth Reitz.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>

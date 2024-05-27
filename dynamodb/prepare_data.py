@@ -3,7 +3,7 @@ from numpy import save
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 
-from helpers import get_tidy_data_path
+from dynamodb_helpers import get_tidy_data_path
 
 df = pd.read_parquet(get_tidy_data_path() / 'current_race.parquet')
 

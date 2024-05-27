@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 
-# Learn more: https://github.com/kennethreitz/setup.py
-
 from setuptools import setup, find_packages
 
 
@@ -12,13 +10,13 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(
-    name='formulaone',
-    version='0.1.1', # increase version by 0.0.1
-    description='Downloads and prepares formula one data',
+    name='dynamodb',
+    version='0.1.2', # increase version by 0.0.1
+    description='Downloads and prepares db movie data',
     long_description=readme,
-    author='Timo Schuerg',
-    author_email='t.schuerg@th-bingen.de',
-    url='https://github.com/kennethreitz/samplemod',
+    author='Safouan Er-Ryfy',
+    author_email='safouan.erryfy@stud.h-da.de',
+    url='https://code.fbi.h-da.de/safouan.erryfy/dynamodb',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )

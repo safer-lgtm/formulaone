@@ -1,0 +1,38 @@
+﻿dynamodb.dynamodb\_helpers
+==========================
+
+.. automodule:: dynamodb.dynamodb_helpers
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      get_config
+      get_dynamodb_resource
+      get_movie_item
+      get_movies_table
+      get_path_to_data
+      get_raw_data_path
+      get_tidy_data_path
+      list_dynamodb_tables
+      query_movies_by_year
+      tidy_movie_data
+   
+   
+
+   
+   
+   
+
+   
+   
+   
+
+
+

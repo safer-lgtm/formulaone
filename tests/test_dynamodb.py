@@ -12,7 +12,7 @@ module_path = os.path.abspath(os.path.join(os.getcwd(), 'formulaone'))
 sys.path.insert(0, module_path)
 print(sys.path.insert(0, module_path))
 
-from formulaone.dynamodb_helpers import *
+from dynamodb.dynamodb_helpers import *
 
 def test_aws_config_keys():
     """Test the necessary AWS config keys."""

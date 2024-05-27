@@ -6,7 +6,7 @@ import sys
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 #from formulaone.sample.helpers import get_tidy_data_path
-from formulaone.helpers import get_tidy_data_path
+from dynamodb.helpers import get_tidy_data_path
 
 
 import pandas as pd
